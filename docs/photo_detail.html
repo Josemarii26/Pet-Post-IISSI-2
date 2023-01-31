@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width , initial-scale=1 ,shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link  rel="icon"   href="images/icons8-wildlife-animals-48 (1).png" type="image/png"/>
+
+    <script src="js/libs/jquery-3.4.1.min.js"> </script>
+    <script src="js/libs/popper.min.js"> </script>
+    <script src="js/libs/bootstrap.min.js"> </script>
+    <script src="js/photo_detail.js" type="module"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/libs/axios.min.js"> </script>
+    <script src="js/utils/include.js"></script>
+    <script src="header.html"></script>
+    <script src="js/header.js" type="module"> </script>
+    <title>Pet&Post</title>
+
+
+
+
+</head>
+
+<body>
+    <div id="page-header"></div>
+
+
+    <div id="errors"></div>
+    <div class="container">
+        
+        <div class="row text-center " id="photobox">
+            <div class=" col-md-12" id="photo-details-column">
+            <form id="form-rate">
+                <div id="rate-now">
+            
+                </div>
+                <div class="form-group" id="valorar">
+                    <label for="rating-input"> Rate this photo: </label>
+                    <select id="rating-input" name="value" class="form-control">
+                        
+                        <option value="1"><a href="#"  id="estrellas" >⭐</a></option>
+                        <option value="2"><a href="#"  id="estrellas" >⭐⭐</a></option>
+                        <option value="3"><a href="#"  id="estrellas" >⭐⭐⭐</a></option>
+                        <option value="4"><a href="#"  id="estrellas" >⭐⭐⭐⭐</a></option>
+                        <option value="5"><a href="#"  id="estrellas" >⭐⭐⭐⭐⭐</a></option>
+                    
+                    </select>
+
+                    <button type="submit" class="btn btn-warning">Rate</button>
+                </div>
+            </form>
+           
+                <p>
+                    <button  class="btn btn-primary " id="button-edit"> Edit this photo </button>
+                    <button  class="btn btn-danger " id="button-delete"> Delete this photo </button>
+                </p>
+            </div>
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+</body>
+
+</html>

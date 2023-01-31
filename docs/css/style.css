@@ -1,0 +1,273 @@
+/*--------------------------HEADER-------------------------*/
+*{
+    font-family: 'Oswald', sans-serif;
+
+}
+div.title-block {
+    text-align: left;
+    padding-top: 1%;
+    
+    background-color: #33c12d;
+}
+
+#title {
+    font-size: 550%;
+    text-decoration: none;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 0%;
+    margin-left: 1%;
+
+}
+.nav-link {
+    transition-duration: 250ms;
+
+}
+.nav-link:hover{
+    transform: scale(1.1);
+}
+
+#subtitle {
+    font-size: 160%;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-family: monospace;
+    margin-bottom: 1.5%;
+    margin-left: 1%;
+
+    
+}
+
+
+nav.navbar{
+    background-color: #71f13e;
+    padding: 0.5%;
+    margin-bottom: 2%;
+}
+#navbar-title{
+    color: white;
+    font-size: 35px;
+
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-size: 32px;
+    }
+
+/*--------------------------INDEX-------------------------*/
+
+
+body{
+    background-color: #7ed15d;
+}
+
+.col-md-9{
+    margin-top: 1.5%;
+}
+#tarjeta{
+    background-color: #67af48; 
+    transition-duration: 250ms;
+    
+}
+#tarjeta:hover{
+    background-color: #5a9c3e; 
+    transform: scale(1.1);
+}
+.card{
+    background-color: transparent;
+    margin-bottom: 7.5%;
+}
+
+.ec-stars-wrapper {
+	/* Espacio entre los inline-block (los hijos, los `a`) 
+	   http://ksesocss.blogspot.com/2012/03/display-inline-block-y-sus-empeno-en.html */
+	font-size: 0;
+	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+#estrellas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+
+}
+.ec-stars-wrapper a {
+	text-decoration: none;
+    display: flex;
+
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 4.2rem;
+	
+	color: rgb(185, 196, 44);
+}
+
+.ec-stars-wrapper:hover a {
+	color: rgb(238, 255, 0);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.ec-stars-wrapper > a:hover ~ a {
+	color: rgb(206, 209, 46);
+}
+
+.btn-primary {
+    align-items: right;
+    height: 100%;
+    background-color: rgb(57, 206, 27);
+    border-color: rgb(57, 206, 27);
+}
+
+.btn-primary:hover {
+    background-color: #097e0f;
+    border-color: #097e0f;
+
+}
+#user-nombre{
+    font-size: 35px;
+}
+
+#titulito{
+    font-size: 35px;
+
+}
+#botoncali{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 995px){
+    .ec-stars-wrapper a {
+        text-decoration: none;
+        display: flex;
+    
+        /* Volver a dar tamaño al texto */
+        font-size: 32px;
+        font-size: 3.2rem;
+        
+        color: rgb(185, 196, 44);
+    }
+    
+}
+
+@media screen and (max-width: 762px){
+    .ec-stars-wrapper a {
+        text-decoration: none;
+        display: inline-block;
+    
+        /* Volver a dar tamaño al texto */
+        font-size: 32px;
+        font-size: 2.6rem;
+        
+        color: rgb(185, 196, 44);
+    }
+
+    .btn-primary {
+        align-items: center;
+        width: 100%;
+        background-color: rgb(57, 206, 27);
+        border-color: rgb(57, 206, 27);
+    }
+    
+}
+/*--------------------------DETAILS-------------------------*/
+
+#photobox{
+    background-color: #5f7f53;
+    transition-duration: 250ms;
+    margin-top: 5%;
+}
+#photobox:hover{
+    background-color: #475e3f;
+    transform: scale(1.2);
+}
+
+
+.img-fluid{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    transition-duration: 250ms;
+
+}
+.img-fluid:hover{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    transform: scale(1.04);
+}
+
+
+/*--------------------------LOGIN-------------------------*/
+
+#boton-login{
+    width: 100%;
+    margin-top: 5%;
+    font-size: 25px;
+    background-color: rgb(57, 206, 27);
+}
+#boton{
+    width: 100%;
+    height: 9%;
+    margin-top: 5%;
+    font-size: 25px;
+    background-color: rgb(57, 206, 27);
+}
+
+/*--------------------------PROFILE-------------------------*/
+
+#tarjeta1{
+    background-color: #67af48; 
+    margin-top: 3%;
+    transition-duration:  250ms;
+    
+}
+#tarjeta1:hover{
+    background-color: #5a9c3e; 
+    transform: scale(1.1);
+}
+
+.card1{
+    background-color: transparent;
+    margin-bottom: 2.5%;
+    margin-top: 3%;
+    margin-right: 5%;
+
+}
+#cabecera{
+    
+    margin-bottom: 2%;
+}
+
+#user-firstname{
+    font-size: 28px;
+}
+
+#user-name{
+    font-size: 54px;
+}
+
+#gallery-user{
+    background-color: #71f13e;
+    
+}
+#user-details-column{
+    background-color: #7ed15d;
+}
+#user-details2-column{
+    background-color: #7ed15d;
+}
+
+#imagen_perfil_username{
+    max-width: 500px;
+    max-height: 150px;
+    border-radius: 5%;
+    transition-duration:  250ms;
+    
+}
+#imagen_perfil_username:hover{
+    transform: scale(1.1);
+}

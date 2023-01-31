@@ -1,0 +1,126 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width , initial-scale=1 ,shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link  rel="icon"   href="images/icons8-wildlife-animals-48 (1).png" type="image/png"/>
+
+    <script src="js/libs/jquery-3.4.1.min.js"> </script>
+    <script src="js/libs/popper.min.js"> </script>
+    <script src="js/libs/bootstrap.min.js"> </script>
+    <script src="js/utils/include.js"></script>
+    <script src="js/register.js" type="module"> </script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/libs/axios.min.js"></script>
+    <title>Pet&Post</title>
+</head>
+
+<body>
+    <div id="page-header"></div>
+
+    <div class="container">
+        <div class="row ">
+            <div class=" col-md-4 text-center ">
+                <h2 class=" text "> New around here? </h2>
+                <br>
+            </div>
+        </div>
+
+        <form id="register-form">
+            <div id="errors"></div>
+            <div class="row ">
+                <div class=" col-md-4">
+                    <div class="row">
+                        <div class="col-md">
+                            
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="avatarUrl" name="avatarUrl"
+                                    placeholder="Profile Avatar" >
+                            </div>
+                                
+                        </div>
+                    </div>
+                    <div class=" form-group ">
+                        <label for=" firstname-input "></label>
+                        <input type=" text " class=" form-control " id="firstname-input" name="firstName"
+                            placeholder=" First Name ">
+                    </div>
+
+                    <div class=" form-group ">
+                        <label for=" lastname-input "></label>
+                        <input type=" text " class=" form-control " id="lastname-input" name="lastName"
+                            placeholder=" Last Name ">
+                    </div>
+                    <hr>
+                    <div class=" form-group ">
+                        <label for=" email-input "></label>
+                        <input type=" text " class=" form-control " id="email-input" name="email" placeholder=" Email ">
+                    </div>
+
+                    <div class=" form-group ">
+                        <label for=" tlfn-input "></label>
+                        <input type=" text " class=" form-control " id="tlfn-input" name="telephone"
+                            placeholder=" Phone number ">
+                    </div>
+                    <hr>
+                    <div class=" form-group ">
+                        <label for=" username-input "> </label>
+                        <input type=" text " class=" form-control " id="username-input" name="username"
+                            placeholder=" Username ">
+                    </div>
+
+                    <div class=" form-group ">
+                        <label for=" password-input "> </label>
+                        <input type="password" class=" form-control " id="password-input" name="password"
+                            placeholder=" Password ">
+                    </div>
+
+                    <div class=" form-group ">
+                        <label for=" Password-input "> </label>
+                        <input type="password" class=" form-control " id="Password-input" name="password2"
+                            placeholder=" Confirm Password">
+                    </div>
+                    <hr>
+
+                    <br>
+                    <div class=" botones-signin text-center">
+                        <button type=" submit " class=" btn btn-primary " id="boton"> Sign in </button>
+                    </div>
+                  
+                    <br>
+                    <div class="frasefinal text-center ">
+                        <h3 class=" text "> Create an account and now enjoy all your friends´ pets! </h3>
+                    </div>
+                    <br>
+                </div>
+            
+            <div class=" col-md-3">
+                
+            </div>
+            <div class=" col-md-5">
+                <img src="images/perromovilintro.png" alt="" class="img-fluid" id="fotoperrito"> 
+                
+            </div>
+        </div>
+
+
+
+        </form>
+
+    </div>
+
+    <script>
+        include("header.html", "#page-header");
+    </script>
+
+
+
+
+</body>
+
+</html>
